@@ -72,9 +72,9 @@ class Ui_MainWindow(object):
 
     def treinar(self):
         entradas = 1
-        neur = 10
+        neur = 100
         self.label_neuronios.setText(str(neur))
-        alfa = 0.1
+        alfa = 0.5
         self.label_aprendizagem.setText(str(alfa))
         errotolerado = 0.05
         listaciclo = []
@@ -82,7 +82,6 @@ class Ui_MainWindow(object):
         xmin = int(self.lineMin.text())
         xmax = int(self.lineMax.text())
         npontos = int(self.lineAmostras.text())
-        # self.label_momento.setText()
 
         # Gerando o arquivo de entradas
         x1 = np.linspace(xmin, xmax, npontos)
@@ -168,7 +167,6 @@ class Ui_MainWindow(object):
                 # Realizando as atualizacoes de pesos
                 vnovo = vanterior + np.transpose(deltav)
                 v0novo = v0anterior + np.transpose(deltav0)
-                # v0novo=vanterior+deltav0
                 wnovo = wanterior + np.transpose(deltaw)
                 w0novo = w0anterior + np.transpose(deltaw0)
                 vanterior = vnovo
