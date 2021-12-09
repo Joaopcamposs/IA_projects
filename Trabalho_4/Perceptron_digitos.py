@@ -10,7 +10,7 @@ import random as rd
 import matplotlib.pyplot as plt
 import os
 
-os.chdir(r'D:\IFTM\9-SEM\IA\Trabalhos\Trabalho_3\digitostreinamento')
+os.chdir(r'D:\IFTM\9-SEM\IA\Trabalhos\Trabalho_4\digitostreinamento')
 
 
 # funcao para criar arquivos txt para matrizes treinadas
